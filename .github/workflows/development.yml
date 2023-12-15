@@ -1,0 +1,46 @@
+name: Development
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  main:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Use Node 20.x
+      - name: Use Node 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache-dependency-path: yarn.lock
+          cache: "yarn"
+
+      # Install Packages
+      - name: Install Packages
+        run: yarn install --frozen-lockfile
+
+      # Run Lint
+      - name: Run Lint
+        run: yarn lint
+
+      # Copy Environment File
+      - name: Copy Environment File
+        run: cp .env.development .env
+
+      # Build Artifact
+      - name: Build Artifact
+        run: yarn build
+
+      # Upload Artifact
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
