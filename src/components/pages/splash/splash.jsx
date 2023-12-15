@@ -24,7 +24,7 @@ export const SplashUi = () => {
         </div>
 
         <div className="animate__animated animate__fadeInUp animate__delay-2s">
-          <span className="text-2xl text-gray-800">
+          <span className="text-4xl text-gray-800">
             <Logo />
           </span>
         </div>

@@ -4,6 +4,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        brand: ["Sacramento", "sans-serif"],
         display: ["Urbanist", "sans-serif"],
       },
     },
