@@ -30,6 +30,17 @@ jobs:
       - name: Run Lint
         run: yarn lint
 
+      # Run Unit Tests
+      - name: Run Unit Tests
+        run: yarn test
+
+      # Upload Coverage
+      - name: Upload Coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage
+
       # Copy Environment File
       - name: Copy Environment File
         run: cp .env.development .env

@@ -15,12 +15,11 @@ export default defineConfig({
     },
   },
   test: {
-    root: "./src",
-    environment: "jsdom",
-    testMatch: ["./tests/**/*.test.tsx"],
     globals: true,
+    environment: "jsdom",
     coverage: {
       enabled: true,
+      include: ["src/**/*.{js,jsx,ts,tsx}"],
       reporter: ["text", "json", "html"],
       provider: "v8",
     },
