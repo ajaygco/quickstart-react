@@ -7,7 +7,8 @@
     "preview": "vite preview",
     "start": "env-cmd -f .env vite",
     "build": "env-cmd -f .env vite build",
-    "lint": "eslint . --ext js,jsx"
+    "lint": "eslint . --ext js,jsx",
+    "test": "vitest"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,6 +16,8 @@
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -24,9 +27,11 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.32.2",
+    "jsdom": "^23.0.1",
     "postcss": "^8.4.23",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.3.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vitest": "^1.1.0"
   }
 }
