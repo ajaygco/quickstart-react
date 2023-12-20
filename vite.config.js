@@ -15,8 +15,14 @@ export default defineConfig({
     },
   },
   test: {
+    root: "./src",
     environment: "jsdom",
     testMatch: ["./tests/**/*.test.tsx"],
     globals: true,
+    coverage: {
+      enabled: true,
+      reporter: ["text", "json", "html"],
+      provider: "v8",
+    },
   },
 });
