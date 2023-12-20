@@ -14,4 +14,9 @@ export default defineConfig({
       stores: path.resolve(__dirname, "src/stores"),
     },
   },
+  test: {
+    environment: "jsdom",
+    testMatch: ["./tests/**/*.test.tsx"],
+    globals: true,
+  },
 });
