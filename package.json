@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "preview": "vite preview",
-    "start": "env-cmd -f .env vite",
-    "build": "env-cmd -f .env vite build",
+    "start:dev": "env-cmd -f .env.development vite",
+    "build:dev": "env-cmd -f .env.development vite build",
+    "start:prod": "env-cmd -f .env.production vite",
+    "build:prod": "env-cmd -f .env.production vite build",
     "lint": "eslint . --ext js,jsx",
     "test": "vitest --coverage"
   },
