@@ -1,12 +1,12 @@
 // Modules
-import React from "react";
+import * as React from "react";
 import { Link } from "react-router-dom";
 
 // Shared
 import { Logo } from "components/shared/logo.shared";
 
 // Component: Presentation
-export const NotFoundUi = () => {
+export const NotFoundUi = (): React.ReactElement => {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-[460px] m-auto flex flex-col items-center p-6">
@@ -36,6 +36,6 @@ export const NotFoundUi = () => {
 };
 
 // Component: Logic
-export const NotFound = () => {
+export const NotFound = (): React.ReactElement => {
   return <NotFoundUi />;
 };
