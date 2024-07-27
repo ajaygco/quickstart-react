@@ -1,0 +1,10 @@
+{
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "github": {
+    "enabled": false,
+    "autoAlias": false,
+    "autoJobCancelation": true,
+    "silent": true
+  }
+}
