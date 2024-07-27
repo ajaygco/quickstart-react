@@ -1,4 +1,4 @@
-// yarn test source/common/__tests__/configs.common.test.js
+// bun run test src/common/__tests__/configs.common.test.ts
 
 import { appConfig } from "@app/common/configs.common";
 
