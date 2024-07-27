@@ -2,7 +2,7 @@
 import * as React from "react";
 
 // Common
-import { appConfig } from "common/configs.common";
+import { appConfig } from "@app/common/configs.common";
 
 // Component: Presentation
 export const LogoUi = (): React.ReactElement => {

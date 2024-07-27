@@ -7,11 +7,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      common: path.resolve(__dirname, "src/common"),
-      components: path.resolve(__dirname, "src/components"),
-      helpers: path.resolve(__dirname, "src/helpers"),
-      styles: path.resolve(__dirname, "src/styles"),
-      stores: path.resolve(__dirname, "src/stores"),
+      "@app/common": path.resolve(__dirname, "src/common"),
+      "@app/components": path.resolve(__dirname, "src/components"),
+      "@app/helpers": path.resolve(__dirname, "src/helpers"),
+      "@app/styles": path.resolve(__dirname, "src/styles"),
+      "@app/stores": path.resolve(__dirname, "src/stores"),
     },
   },
   test: {

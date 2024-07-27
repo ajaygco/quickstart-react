@@ -3,7 +3,7 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 
-import { If } from "components/shared/if.shared";
+import { If } from "@app/components/shared/if.shared";
 
 describe("If", () => {
   it("should render children when condition is true", () => {
