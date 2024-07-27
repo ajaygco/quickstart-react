@@ -8,7 +8,8 @@
     "start": "env-cmd -f .env vite",
     "build": "env-cmd -f .env vite build",
     "lint": "eslint . --ext js,jsx",
-    "test": "vitest --coverage"
+    "test": "vitest --coverage",
+    "tsc": "tsc"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001643",
@@ -19,8 +20,10 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "@vitest/coverage-v8": "^1.1.0",
     "autoprefixer": "^10.4.14",
@@ -33,6 +36,7 @@
     "postcss": "^8.4.23",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.3.2",
+    "typescript": "^5.5.4",
     "vite": "^4.4.5",
     "vitest": "^1.1.0"
   }

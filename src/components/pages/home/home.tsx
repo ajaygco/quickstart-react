@@ -1,11 +1,11 @@
 // Modules
-import React from "react";
+import * as React from "react";
 
 // Shared
 import { Logo } from "components/shared/logo.shared";
 
 // Component: Presentation
-export const SplashUi = () => {
+export const HomeUi = (): React.ReactElement => {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-[460px] m-auto flex flex-col items-center p-6">
@@ -34,6 +34,6 @@ export const SplashUi = () => {
 };
 
 // Component: Logic
-export const Splash = () => {
-  return <SplashUi />;
+export const Home = (): React.ReactElement => {
+  return <HomeUi />;
 };

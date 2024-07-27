@@ -1,17 +1,17 @@
 // Modules
-import React from "react";
+import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Pages
-import { Splash } from "components/pages/splash/splash";
+import { Home } from "components/pages/home/home";
 import { NotFound } from "components/pages/not-found/not-found";
 
 // Component: Presentation
-export const AppRouterUi = () => {
+export const AppRouterUi = (): React.ReactElement => {
   return (
     <div className="w-[100dvw] h-[100dvh] flex">
       <Routes>
-        <Route path="/" element={<Splash />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
@@ -19,6 +19,6 @@ export const AppRouterUi = () => {
 };
 
 // Component: Logic
-export const AppRouter = () => {
+export const AppRouter = (): React.ReactElement => {
   return <AppRouterUi />;
 };
