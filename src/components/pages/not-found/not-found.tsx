@@ -3,7 +3,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 // Shared
-import { Logo } from "components/shared/logo.shared";
+import { Logo } from "@app/components/shared/logo.shared";
 
 // Component: Presentation
 export const NotFoundUi = (): React.ReactElement => {

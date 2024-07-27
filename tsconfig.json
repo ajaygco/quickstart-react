@@ -8,6 +8,9 @@
 
     // Paths
     "baseUrl": "./src",
+    "paths": {
+      "@app/*": ["./*"]
+    },
 
     // Bundler
     "moduleResolution": "bundler",

@@ -4,10 +4,10 @@ import { createRoot } from "react-dom/client";
 import type { Container } from "react-dom/client";
 
 // Styles
-import "styles/app.styles.css";
+import "@app/styles/app.styles.css";
 
 // Components
-import { AppRouter } from "components/app-router";
+import { AppRouter } from "@app/components/app-router";
 
 // Create Root
 const app = createRoot(document.getElementById("root") as Container);

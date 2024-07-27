@@ -2,7 +2,7 @@
 import * as React from "react";
 
 // Shared
-import { Logo } from "components/shared/logo.shared";
+import { Logo } from "@app/components/shared/logo.shared";
 
 // Component: Presentation
 export const HomeUi = (): React.ReactElement => {

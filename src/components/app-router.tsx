@@ -3,8 +3,8 @@ import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Pages
-import { Home } from "components/pages/home/home";
-import { NotFound } from "components/pages/not-found/not-found";
+import { Home } from "@app/components/pages/home/home";
+import { NotFound } from "@app/components/pages/not-found/not-found";
 
 // Component: Presentation
 export const AppRouterUi = (): React.ReactElement => {

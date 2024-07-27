@@ -1,6 +1,6 @@
 // yarn test source/common/__tests__/utils.common.test.js
 
-import { getUtcTimestamp } from "common/utils.common";
+import { getUtcTimestamp } from "@app/common/utils.common";
 
 describe("utils.common", () => {
   describe("getUtcTimestamp", () => {
