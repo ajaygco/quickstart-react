@@ -1,4 +1,4 @@
-// yarn test source/common/__tests__/utils.common.test.js
+// bun run test src/common/__tests__/utils.common.test.ts
 
 import { getUtcTimestamp } from "@app/common/utils.common";
 

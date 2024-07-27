@@ -3,8 +3,8 @@ import * as React from "react";
 
 type IfProps = {
   condition: boolean;
-  renderWhenTrue: React.ReactElement;
-  renderWhenFalse: React.ReactElement;
+  renderWhenTrue?: React.ReactElement;
+  renderWhenFalse?: React.ReactElement;
   children?: React.ReactElement;
 };
 
