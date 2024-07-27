@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import type { Container } from "react-dom/client";
 
 // Styles
-import "@app/styles/app.styles.css";
+import "@app/styles/main.less";
 
 // Components
 import { AppRouter } from "@app/components/app-router";
