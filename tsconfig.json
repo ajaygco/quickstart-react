@@ -27,8 +27,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-
-  // TODO: Until TS is setup properly
-  "exclude": ["**/**/*.test.ts", "**/**/*.test.tsx"]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
