@@ -66,11 +66,34 @@ jobs:
           name: coverage
           path: coverage
 
+  # Type Check
+  type-check:
+    name: Run Type Check
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Setup Bun
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      # Install Packages
+      - name: Install Packages
+        run: bun install --frozen-lockfile
+
+      # Run Type Check
+      - name: Run Type Check
+        run: bun run tsc
+
   # Build
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: [lint, unit-tests]
+    needs: [lint, unit-tests, type-check]
     steps:
       # Checkout
       - name: Checkout
