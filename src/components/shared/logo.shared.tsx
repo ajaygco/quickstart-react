@@ -4,17 +4,10 @@ import * as React from "react";
 // Common
 import { appConfig } from "@app/common/configs.common";
 
-// Component: Presentation
-export const LogoUi = (): React.ReactElement => {
+// Types
+type LogoProps = {};
+
+// Component
+export const Logo: React.FC<LogoProps> = (): React.ReactElement => {
   return <span className="font-brand lowercase">{appConfig.appName}</span>;
 };
-
-// Component: Logic
-export const LogoLogic = (): React.ReactElement => {
-  return <LogoUi />;
-};
-
-// Component: Memo
-export const Logo = React.memo((): React.ReactElement => {
-  return <LogoLogic />;
-});

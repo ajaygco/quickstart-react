@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 // Shared
 import { Logo } from "@app/components/shared/logo.shared";
 
-// Component: Presentation
-export const NotFoundUi = (): React.ReactElement => {
+// Types
+type NotFoundProps = {};
+
+// Component
+export const NotFound: React.FC<NotFoundProps> = (): React.ReactElement => {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-[460px] m-auto flex flex-col items-center p-6">
@@ -33,9 +36,4 @@ export const NotFoundUi = (): React.ReactElement => {
       </div>
     </div>
   );
-};
-
-// Component: Logic
-export const NotFound = (): React.ReactElement => {
-  return <NotFoundUi />;
 };

@@ -11,44 +11,10 @@
       "// Types",
       "type ${1:ComponentName}Props = {}",
       "",
-      "// Component: Presentation",
-      "export const ${1:ComponentName}Ui = (): React.ReactElement => {",
+      "// Component",
+      "export const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = (): React.ReactElement => {",
       "  return <div className=\"flex\">$0</div>;",
       "};",
-      "",
-      "// Component: Logic",
-      "export const ${1:ComponentName} = (): React.ReactElement => {",
-      "  return <${1:ComponentName}Ui />;",
-      "};",
-      ""
-    ]
-  },
-  // React
-  "New Memoized React Component": {
-    "prefix": "nmrc",
-    "scope": "typescript,typescriptreact",
-    "description": "New Memoized React Component",
-    "body": [
-      "// Modules",
-      "import * as React from \"react\";",
-      "",
-      "// Types",
-      "type ${1:ComponentName}Props = {}",
-      "",
-      "// Component: Presentation",
-      "export const ${1:ComponentName}Ui = (): React.ReactElement => {",
-      "  return <div className=\"flex\">$0</div>;",
-      "};",
-      "",
-      "// Component: Logic",
-      "export const ${1:ComponentName}Logic = (props: ${1:ComponentName}Props): React.ReactElement => {",
-      "  return <${1:ComponentName}Ui {...props} />;",
-      "};",
-      "",
-      "// Component: Memo",
-      "export const ${1:ComponentName} = React.memo((props: ${1:ComponentName}Props): React.ReactElement => {",
-      "  return <${1:ComponentName}Logic {...props} />;",
-      "});",
       ""
     ]
   }
