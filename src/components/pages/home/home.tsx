@@ -4,8 +4,11 @@ import * as React from "react";
 // Shared
 import { Logo } from "@app/components/shared/logo.shared";
 
-// Component: Presentation
-export const HomeUi = (): React.ReactElement => {
+// Types
+type HomeProps = {};
+
+// Component
+export const Home: React.FC<HomeProps> = (): React.ReactElement => {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-[460px] m-auto flex flex-col items-center p-6">
@@ -31,9 +34,4 @@ export const HomeUi = (): React.ReactElement => {
       </div>
     </div>
   );
-};
-
-// Component: Logic
-export const Home = (): React.ReactElement => {
-  return <HomeUi />;
 };

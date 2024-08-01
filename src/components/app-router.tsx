@@ -6,8 +6,11 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "@app/components/pages/home/home";
 import { NotFound } from "@app/components/pages/not-found/not-found";
 
-// Component: Presentation
-export const AppRouterUi = (): React.ReactElement => {
+// Types
+type AppRouterProps = {};
+
+// Component
+export const AppRouter: React.FC<AppRouterProps> = (): React.ReactElement => {
   return (
     <div className="w-[100dvw] h-[100dvh] flex">
       <Routes>
@@ -16,9 +19,4 @@ export const AppRouterUi = (): React.ReactElement => {
       </Routes>
     </div>
   );
-};
-
-// Component: Logic
-export const AppRouter = (): React.ReactElement => {
-  return <AppRouterUi />;
 };
